@@ -1,0 +1,42 @@
+.phone_block {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    border: solid black 1px;
+    border-radius: 1em;
+    width: 15%;
+    padding: 0.7%;
+    background: grey;
+}
+
+.phone_block img {
+    border-radius: 1em;
+    margin-bottom: 0.5em;
+}
+
+.phone_text {
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+    padding: 0.2em;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.phone_text .phone_text_left{
+    flex: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone_text .phone_text_right{
+    flex: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

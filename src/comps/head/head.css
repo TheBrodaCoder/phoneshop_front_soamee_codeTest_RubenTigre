@@ -1,0 +1,22 @@
+.phoneshop_head {
+    text-align: center;
+    color: white;
+    display: flex;
+    width: 100%;
+    
+}
+
+.phoneshop_head img{
+    width: 100%;
+    height: 250px;
+}
+
+.phoneshop_head h1 {
+    position: absolute;
+    left: 38%;
+    font-size: 500%;
+    text-shadow: 2px 3px 0px black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+

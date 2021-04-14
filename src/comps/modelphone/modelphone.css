@@ -4,19 +4,23 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .ModelPhone_inner {
     position: relative;
     width: 100%;
-    max-width: 40vw;
+    max-width: 60vw;
     background-color: #C3C3C3;
     border-radius: 2em;
+    border: black 2px solid;
+    box-shadow: black 4px 6px 3px;
 
     display: flex;
     flex-direction: column;
@@ -32,8 +36,9 @@
 .ModelPhone_Top img {
     position: relative;
     flex: 50%;
-    width: 16vw;
-    border-radius: 2em;
+    width: 20vw;
+    border-radius: 2vw;
+    margin-left: 4vw;
 }
 
 .ModelPhone_Top table {
@@ -41,6 +46,7 @@
     flex: 50%;
     width: 100%;
     border-radius: 2em;
+    font-size: 1.1vw;
 }
 
 .ModelLine_tr td{
@@ -67,6 +73,7 @@
     align-self: center;
     width: 90%;
     margin-bottom: 1vw ;
+    font-size: 1.3vw;
 }
 
 .ModelPhone_Description p{

@@ -9,13 +9,17 @@
     background: #C3C3C3;
     margin-top: 2vw;
     align-items: center;
+
+    box-shadow: black 5px 3px 3px;
 }
 
 .phone_block img {
-    border-radius: 2em;
+    border-radius: 2vw;
     margin-bottom: 0.5em;
     padding-top: 0.5vw;
     width: 10vw;
+    border-bottom: black 2px solid;
+
 }
 
 .phone_text {
@@ -28,20 +32,22 @@
     font-size: 1.3vw;
     color: white;
     font-weight: 600;
-    text-shadow: black 1px 0.5px 1px ;
+    text-shadow: black 2px 2px 0px ;
     
 }
 
 .phone_text .phone_text_left{
-    flex: 25%;
+    flex: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .phone_text .phone_text_right{
-    flex: 75%;
+    flex: 40%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 1vw;
 }

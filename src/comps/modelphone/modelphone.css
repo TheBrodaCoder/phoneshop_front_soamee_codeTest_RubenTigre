@@ -39,6 +39,7 @@
     width: 20vw;
     border-radius: 2vw;
     margin-left: 4vw;
+    border-bottom: black 2px solid;
 }
 
 .ModelPhone_Top table {

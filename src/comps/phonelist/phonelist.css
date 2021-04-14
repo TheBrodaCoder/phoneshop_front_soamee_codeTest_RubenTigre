@@ -1,0 +1,13 @@
+.phonelist_div {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 3vw;
+}
+
+.phonelist_div div {
+    flex-grow: 1;
+    flex-basis: 25%;
+    
+}

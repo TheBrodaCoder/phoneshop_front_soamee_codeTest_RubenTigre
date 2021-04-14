@@ -1,6 +1,6 @@
 .about_div {
-    width: 90%;
-    height: 60em;
+    width: 96%;
+    height: 55vw;
     background-color: #254A50;
     display: flex;
     
@@ -13,20 +13,20 @@
     top: 12%;
     left: 5%;
     margin-left: 10px;
-    background-color: #6E707C;
+    background-color: #C3C3C3;
     
 }
 
 .about_text p{
     width: 90%;
     margin-left: 2em;
-    font-size: 1.7em;
+    font-size: 1.7vw;
     margin-top: 5em;
 
 }
 .about_sidebar {
     position: relative;
-    background-color: hotpink;
+    background-color: #41C0A1;
     width: 30%;
     height: 90%;
     top: 8%;
@@ -46,11 +46,11 @@
     width: 90%;
     top: 20%;
     left: 5%;
-    font-size: 1.5em;
+    font-size: 1.7vw;
 }
 
 .about_sidebar span {
     color: white;
-    font-size: 2em;
+    font-size: 2vw;
 
 }

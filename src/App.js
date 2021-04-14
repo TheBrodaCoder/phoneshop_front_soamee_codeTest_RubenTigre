@@ -1,13 +1,11 @@
 import './App.css';
 import React from 'react';
 import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
-import logo from './comps/nav/logo.png';
+import logo from './logo.png';
 import Head from './comps/head/head';
 import About from './comps/about/about';
+import Home from './comps/home/home';
 
-const Home = () => {
-  return (<h1>Home</h1>)
-}
 
 
 function App() {
@@ -23,7 +21,7 @@ function App() {
 
              <div className='NavBar_right'>
                  <div className='navBar_right_links'>
-                    <Link to="/home">Home</Link>
+                    <Link exact='true' to="/">Home</Link>
                     <Link to="/about">About</Link>
                  </div>
              </div>
@@ -33,7 +31,7 @@ function App() {
             <About/>
           </Route>
           <Route exact path="/">
-            <Home />
+            <Home/>
           </Route>
         </Switch>
         </BrowserRouter>

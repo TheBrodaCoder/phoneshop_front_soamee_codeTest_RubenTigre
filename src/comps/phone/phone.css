@@ -1,17 +1,21 @@
 .phone_block {
     display: flex;
     flex-direction: column;
-    height: 50%;
     border: solid black 1px;
     border-radius: 1em;
-    width: 15%;
+    width: 14vw;
+    height: 15vw;
     padding: 0.7%;
     background: grey;
+    margin-top: 2vw;
+    align-items: center;
 }
 
 .phone_block img {
-    border-radius: 1em;
+    border-radius: 2em;
     margin-bottom: 0.5em;
+    padding-top: 0.5vw;
+    width: 10vw;
 }
 
 .phone_text {
@@ -21,7 +25,7 @@
     justify-content: center;
     flex: 50%;
     padding: 0.2em;
-    font-size: 1.5em;
+    font-size: 1.3vw;
     color: white;
     font-weight: 600;
     

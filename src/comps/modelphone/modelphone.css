@@ -1,15 +1,80 @@
 .ModelPhone_block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ModelPhone_inner {
+    position: relative;
+    width: 100%;
+    max-width: 40vw;
+    background-color: #C3C3C3;
+    border-radius: 2em;
 
-}
-
-.ModelPhone_Top {
-
-}
-
-.ModelPhone_Description{
+    display: flex;
+    flex-direction: column;
     
 }
+
+.ModelPhone_Top{
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+.ModelPhone_Top img {
+    position: relative;
+    flex: 50%;
+    width: 16vw;
+    border-radius: 2em;
+}
+
+.ModelPhone_Top table {
+    position: relative;
+    flex: 50%;
+    width: 100%;
+    border-radius: 2em;
+}
+
+.ModelLine_tr td{
+    padding: 0.3em;
+    border-bottom: black solid 1px;
+}
+
+.ModelLine_tr .spec_td{
+    flex: 50%;
+    text-align: left;
+}
+
+.ModelLine_tr .value_td{
+    flex: 50%;
+    text-align: right;
+}
+
+
+.ModelPhone_Description {
+    background-color: gray;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    margin-bottom: 1vw ;
+}
+
+.ModelPhone_Description p{
+    text-align: left;
+    margin-left: 1vw;
+}
+.ModelPhone_Description .description{
+    margin-bottom: 1em;
+    color: white;
+}
+

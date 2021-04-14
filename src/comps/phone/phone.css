@@ -6,7 +6,7 @@
     width: 14vw;
     height: 15vw;
     padding: 0.7%;
-    background: grey;
+    background: #C3C3C3;
     margin-top: 2vw;
     align-items: center;
 }
@@ -28,6 +28,7 @@
     font-size: 1.3vw;
     color: white;
     font-weight: 600;
+    text-shadow: black 1px 0.5px 1px ;
     
 }
 

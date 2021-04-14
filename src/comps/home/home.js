@@ -15,7 +15,6 @@ const Home = () => {
     useEffect(() => {phoneService.getAll().then(response => {
         setPhoneData(response.data);
         setTimeout(() => {
-            console.log('done');
             setIsLoad(res => !res)
         }, 3000);
     }).catch(error => {
@@ -27,6 +26,11 @@ const Home = () => {
         let reqPhone = PhoneData.find(Phone => Phone.id === id);
         setDisPhone(reqPhone);
         toggleDisplay(true);
+    }
+
+    const handleExit = () => {
+        toggleDisplay(false);
+        setDisPhone({});
     }
 
 
@@ -41,11 +45,11 @@ const Home = () => {
             : 
             (
             <div className='home_phones'>
-                <PhoneList phoneData={PhoneData} handleDisplay={handleDisplay} Displayed={Displayed}/>
+                <PhoneList phoneData={PhoneData} handleDisplay={handleDisplay}/>
             </div>
             )}
             
-            <ModelPhone phone={DisplayedPhone} displayed={Displayed}/>
+            <ModelPhone phone={DisplayedPhone} displayed={Displayed} handleExit={handleExit}/>
         </div>
 
         

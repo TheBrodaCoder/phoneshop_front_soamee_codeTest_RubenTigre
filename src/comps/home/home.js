@@ -16,7 +16,7 @@ const Home = () => {
         setPhoneData(response.data);
         setTimeout(() => {
             setIsLoad(res => !res)
-        }, 3000);
+        }, 1500);
     }).catch(error => {
         console.log('error at grab phones' ,error)
     })}, [])

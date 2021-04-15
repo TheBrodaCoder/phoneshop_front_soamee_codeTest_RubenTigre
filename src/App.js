@@ -15,8 +15,7 @@ function App() {
       <BrowserRouter>
         <div className='NavBar'>
             <div className='NavBar_left'>
-                <img alt='logo' src={logo}>
-                </img>
+                <img alt='logo' src={logo}/>
             </div>
 
              <div className='NavBar_right'>
@@ -31,7 +30,7 @@ function App() {
             <About/>
           </Route>
           <Route exact path="/">
-            <Home/>
+            <div className='home_block'><Home/></div>
           </Route>
         </Switch>
         </BrowserRouter>

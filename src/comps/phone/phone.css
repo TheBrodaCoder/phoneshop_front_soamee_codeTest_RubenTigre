@@ -51,3 +51,63 @@
     justify-content: flex-end;
     margin-right: 1vw;
 }
+
+@media only screen and (max-width: 550px) {
+    .phone_block {
+        display: flex;
+        flex-direction: column;
+        border: solid black 1px;
+        border-radius: 1em;
+        width: 30vw;
+        height: 15vw;
+        padding: 0.7%;
+        background: #C3C3C3;
+        margin-top: 2vw;
+        align-items: center;
+
+        margin-left: 5vw;
+        margin-bottom: 2vw;
+        padding-bottom: 7vw;
+    
+        box-shadow: black 5px 3px 3px;
+    }
+    
+    .phone_block img {
+        border-radius: 2vw;
+        margin-bottom: 0.5em;
+        padding-top: 0.5vw;
+        width: 10vw;
+        border-bottom: black 2px solid;
+    
+    }
+    
+    .phone_text {
+        width: 99%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 50%;
+        padding: 0.2em;
+        font-size: 3vw;
+        color: white;
+        font-weight: 700;
+        text-shadow: black 1px 1px ;
+
+        
+    }
+    
+    .phone_text .phone_text_left{
+        flex: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .phone_text .phone_text_right{
+        flex: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 1vw;
+    }
+}

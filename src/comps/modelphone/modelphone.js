@@ -17,7 +17,6 @@ const ModelLine = ({spec, value}) => {
 const ModelPhone = ({phone, displayed, handleExit}) => {
 
     let phoneArr = Object.entries(phone).filter(entry => entry[0] !== 'description');
-    let base = '../../phonepics/';
 
 
     return (
@@ -31,7 +30,7 @@ const ModelPhone = ({phone, displayed, handleExit}) => {
 
                         <div className='ModelPhone_Img'>
 
-                            <img alt={`${phone.name}`} src={`${base}${phone.imageFileName}`}/>
+                            <img alt={`${phone.name}`} src={phone.imageFileName}/>
                         </div>
                         <div className='ModelPhone_Table'>
                             <table>

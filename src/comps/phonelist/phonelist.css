@@ -11,3 +11,18 @@
     flex-basis: 25%;
     
 }
+
+@media only screen and (max-width: 550px) {
+    .phonelist_div {
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .phonelist_div div {
+        flex-grow: 1;
+        flex-basis: 50%;
+        
+    }
+}

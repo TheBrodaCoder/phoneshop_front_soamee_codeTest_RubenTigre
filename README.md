@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+There is my take on the Front for the CodeTest Web to Soamee.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Despite the fact we already are using this on our back (with the optimized Build), we still can use the development server from Create-React-App.
+Because of CORS limitation, we had to add to our back the CORS middleware, but in fact, when we use the heroku version or the back npm start version,
+it didnt use any Cross request. Its only to handle the Development server.
 
-## Available Scripts
+//Components
 
-In the project directory, you can run:
+App:
 
-### `npm start`
+    This component is the one that has all the static components, like header, nav, or the footer.
+    
+Head:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    This component displays the head img and the Head title. is just a dumb component.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Nav: 
 
-### `npm test`
+    In this case, Nav is not a component. I use the React-Router-DOM to make this a Single Page App.
+    
+PhoneList:
+    
+    This component request the array of phones. Because we use lowDb there is near to zero waiting time at
+    requesting Phones, so i add a SetTimeOut to let the loader been visible.
+    
+Phone:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    This component render a Phone card, with some info, like Name, Img and Price.
+    
+ModelPhone:
 
-### `npm run build`
+    This component is the pop up we will see every time we click on a Phone card. It will have all the information we 
+    have of that phone.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+About: 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    This component will be rendered in case we use the About link on the Nav. It provides some info about the webApp
+    and also of me, Ruben Tigre. In case you're wondering... Yes, i love my Surname.
+    
+Footer: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Another dumb component. In this case it only displays my name (again) at the bottom left. In the bottom right
+    are displayed links to my Github and my Linkedin.

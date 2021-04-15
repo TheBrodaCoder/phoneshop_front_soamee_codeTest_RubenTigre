@@ -1,5 +1,5 @@
 const axios = require('axios');
-const baseUrl = '/api/phones';
+const baseUrl = '/phones';
 
 const getAll = () => {
     return axios.get(baseUrl);

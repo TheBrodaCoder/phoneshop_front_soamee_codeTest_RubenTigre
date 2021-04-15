@@ -5,6 +5,7 @@ import logo from './logo.png';
 import Head from './comps/head/head';
 import About from './comps/about/about';
 import Home from './comps/home/home';
+import Footer from './comps/footer/footer';
 
 
 
@@ -27,13 +28,15 @@ function App() {
         </div>
         <Switch>
           <Route exact path="/about">
-            <About/>
+            <div className='about_block'><About/></div>
+            
           </Route>
           <Route exact path="/">
             <div className='home_block'><Home/></div>
           </Route>
         </Switch>
         </BrowserRouter>
+        <Footer/>
     </div>
   );
 }
